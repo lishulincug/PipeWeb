@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WaterPipeManage:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sd.war">
+      <element id="artifact" artifact-name="WaterPipeManage:war exploded" />
+    </root>
+  </artifact>
+</component>
