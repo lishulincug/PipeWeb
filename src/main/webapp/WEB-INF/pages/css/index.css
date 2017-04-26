@@ -1,0 +1,113 @@
+html{
+	font-size: 65%;
+	
+}
+body{
+	background-color: #E3E3E3;
+}
+.head{
+	background-image: url(../img/bg-header.png);
+	
+}
+.head_li>li{
+	float: right;
+	list-style: none;
+	margin-left: 3%;
+	border-left: solid #FFFFFF 0.1rem;	
+	cursor: pointer;
+}
+.head:after{
+	clear: both;
+}
+.content{
+	margin-top: 5%;
+}
+.row_1{
+	background-image: url(../img/product.png);
+}
+.center{
+	padding-left: 33%;
+	padding-right: 33%;
+}
+#menu_1 .left .img_icon{
+	background-image: url(../img/product.png);
+	
+}
+#menu_2 .left .img_icon{
+	background-image: url(../img/service.png);
+	
+}
+#menu_3 .left .img_icon{
+	background-image: url(../img/juece.png);
+	
+}
+#menu_4 .left .img_icon{
+	background-image: url(../img/yunwei.png);
+	
+}
+#menu_1,#menu_2,#menu_3,#menu_4{
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+.img_icon{
+	padding-top: 20%;
+	height: 275px;
+}
+.img_title{
+	font-size: 2.5rem;
+}
+.text_down{
+	    width: 100%;
+    height: 143px;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #D4E7F5;
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #fff;
+}
+.right_text{
+	color: white;
+	font-size: 1.6rem;
+}
+.set-effect{
+	height: 140px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+    float: left;
+    border: 2px solid #fff;
+}
+.img_right{
+	padding-top: 2%;
+	
+}
+.img_play{
+	-webkit-transition: -webkit-transform 0.5s ease-out;
+	-moz-transition: -moz-transform 0.5s ease-out;
+	-o-transition: -o-transform 0.5s ease-out;
+	-ms-transition: -ms-transform 0.5s ease-out;
+}
+.img_play:hover{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	padding-bottom: 2%;
+	
+	
+}
+.img_icon{
+	-webkit-transition: -webkit-transform 0.5s ease-out;
+	-moz-transition: -moz-transform 0.5s ease-out;
+	-o-transition: -o-transform 0.5s ease-out;
+	-ms-transition: -ms-transform 0.5s ease-out;
+}
+.img_icon:hover{
+	border: solid  dodgerblue  0.05rem;
+}
