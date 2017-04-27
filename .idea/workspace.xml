@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c120e42-dd21-48ee-93d6-8aec0c15cf5b" name="Default" comment="修改回滚">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/loginfailed.jsp" />
+    <list default="true" id="4c120e42-dd21-48ee-93d6-8aec0c15cf5b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/imudges/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/imudges/controller/IndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/imudges/controller/PipeWebController.class" afterPath="$PROJECT_DIR$/target/classes/com/imudges/controller/PipeWebController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sd/WEB-INF/classes/com/imudges/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/sd/WEB-INF/classes/com/imudges/controller/IndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sd/WEB-INF/classes/com/imudges/controller/PipeWebController.class" afterPath="$PROJECT_DIR$/target/sd/WEB-INF/classes/com/imudges/controller/PipeWebController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/Service/PipeWebService.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/Service/PipeWebService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/controller/PipeWebController.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/controller/PipeWebController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imudges/dao/PipeWebDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/imudges/dao/PipeWebDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/PipeWebDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PipeWebDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sd/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/sd/META-INF/MANIFEST.MF" />
@@ -24,10 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sd/WEB-INF/classes/spring/spring-web.xml" afterPath="$PROJECT_DIR$/target/sd/WEB-INF/classes/spring/spring-web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sd/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/target/sd/WEB-INF/pages/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sd/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/sd/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Login.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index1.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1685,7 +1672,7 @@
       <workItem from="1493126022482" duration="4157000" />
       <workItem from="1493176026725" duration="448000" />
       <workItem from="1493176922545" duration="925000" />
-      <workItem from="1493295976504" duration="4757000" />
+      <workItem from="1493295976504" duration="4783000" />
     </task>
     <task id="LOCAL-00001" summary="计算">
       <created>1493176411032</created>
@@ -1708,7 +1695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493177163424</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改回滚">
+      <created>1493300765028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493300765028</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1744,7 +1738,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30839000" />
+    <option name="totallyTimeSpent" value="30865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
