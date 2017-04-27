@@ -9,4 +9,7 @@
     <select id="queryById" resultType="PipeWeb">
         select * from waterpipe.pipeweb where pw_id=#{pwId};
     </select>
+    <select id="queryByLocal" resultType="PipeWeb">
+        SELECT  * FROM waterpipe.pipeweb WHERE  pw_local=#{pwLocal};
+    </select>
 </mapper>

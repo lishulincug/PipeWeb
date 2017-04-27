@@ -3,7 +3,6 @@ package com.imudges.Service.Impl;
 import com.imudges.Service.PipeWebService;
 import com.imudges.dao.PipeWebDao;
 import com.imudges.entity.PipeWeb;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

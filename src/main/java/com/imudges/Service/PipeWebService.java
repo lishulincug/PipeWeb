@@ -1,6 +1,7 @@
 package com.imudges.Service;
 
 import com.imudges.entity.PipeWeb;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 

@@ -1,5 +1,9 @@
 package com.imudges.controller;
 
+
+import com.imudges.Service.UserService;
+import com.imudges.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,16 +16,18 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 public class IndexController {
+   @Autowired
+   UserService userService;
+
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String login(){
         return "Login";
     }
     @RequestMapping(value = "/index",method = RequestMethod.POST)
     public String index(HttpServletRequest request, HttpServletResponse response){
-        if (request.getParameter("username").equals("123")
-                &&request.getParameter("password").equals("123")) {
+        User user = userService.getUserById(request.getParameter("username"));
+        if(user!=null&&user.getuPassword().equals(request.getParameter("password")))
             return "index";
-        }
         return "loginfailed";
     }
 
