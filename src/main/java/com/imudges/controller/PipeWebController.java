@@ -18,11 +18,11 @@ import java.util.List;
 public class PipeWebController {
     @Autowired
     PipeWebService pipeWebService;
-    @RequestMapping(value = "/details",method = RequestMethod.GET)
+    @RequestMapping(value = "/map",method = RequestMethod.GET)
     public String details(Model model){
         List<PipeWeb> allPipeWeb = pipeWebService.queryAllPipeWebInfo();
         model.addAttribute("allPipeWeb",allPipeWeb);
         System.out.println(allPipeWeb);
-        return "details";
+        return "map";
     }
 }

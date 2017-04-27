@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
@@ -10,6 +12,7 @@
     <meta name="author" content="">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/supersized.css">
     <link rel="stylesheet" href="css/style.css">
@@ -25,7 +28,7 @@
 
 <div class="page-container">
     <h1>登录</h1>
-    <form action="" method="post">
+    <form action="/index" method="post" >
         <input type="text" name="username" class="username" placeholder="用户名">
         <input type="password" name="password" class="password" placeholder="密码">
         <button type="submit" class="submit">提交</button>
@@ -49,7 +52,7 @@
             <a>注册</a>
         </button>
         <button>
-            <a href="index.html">游客登录</a>
+            <a href="index.jsp">游客登录</a>
         </button>
     </div>
 </div>

@@ -19,4 +19,8 @@ public interface PipeWebDao {
     * 通过id查找相应的管网
     * */
     public PipeWeb queryById(int pwId);
+
+    /**通过地点查找管网
+     * */
+    public PipeWeb queryByLocal(String pwLocal);
 }

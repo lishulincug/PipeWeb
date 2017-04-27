@@ -1,3 +1,7 @@
+<%@ page import="com.imudges.entity.PipeWeb" %>
+<%@ page import="java.util.List" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,13 +24,16 @@
 	map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
 	map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
 	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-	var marker = new BMap.Marker(new BMap.Point(116.404, 39.915));        // 创建标注    
+	var marker = new BMap.Marker(new BMap.Point(116.404, 39.915));        // 创建标注
+    <%List<PipeWeb> allPipeWeb = (List<PipeWeb>)request.getAttribute("allPipeWeb");
+    PipeWeb pipeWeb = allPipeWeb.get(0);
+    %>
 	map.addOverlay(marker);                     // 将标注添加到地图中
 	var opts = {    
 	 width : 250,     // 信息窗口宽度    
 	 height: 100,     // 信息窗口高度    
-	 title : "Hello"  // 信息窗口标题   
+	 title : "压力：<%=pipeWeb.getPwPress()%>"  // 信息窗口标题
 	}    
-	var infoWindow = new BMap.InfoWindow("World", opts);  // 创建信息窗口对象    
+	var infoWindow = new BMap.InfoWindow("液位：<%=pipeWeb.getPwFlow()%>", opts);  // 创建信息窗口对象
 	map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
 </script>
