@@ -1,0 +1,50 @@
+
+.normal-li{display: block; height: 20px;}
+.normal-li span{display: inline-block; font-size: 10px; height:15px;}
+.dropdown-list, .list-li{display: block;}
+.list-li{border:1px solid #eeeeee;}
+.normaldiv{float: right;text-align: center; width: 251px;}
+.imgpic{width: 30px; height:30px;float:left; margin-left: 10px;margin-top: 10px;}
+.normal-li .value{margin-right: 5px; color: #B2ABAB !important;;}
+.list-li{height: 70px;}
+.normal-li .name{color:#6AA3D3 !important;}
+.normal-li:hover span {color: #65CEA7 !important;}
+
+
+
+
+
+ #search-page{
+	
+	width:298px;
+	height:43px;
+	
+	background: white;
+	z-index:999px;
+	
+	border: 1px solid #eeeeee;
+	padding: 11px 18px 13px;
+	text-align: right;
+   	color: #8c8c8c;
+    font-size: 12px;
+    line-height: 18px;
+   
+   
+   
+}
+
+ #search-page .pre, #search-page .next{
+
+    margin-left: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+    height:16px;
+    border:0;
+}
+ #search-page .pre{
+	background: url(../../Images/common/icon/arrow1.png);
+}
+ #search-page .next{
+	background: url(../../Images/common/icon/arrow2.png) -11px 0;
+}

@@ -14,29 +14,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<base href="<%=basePath %>" />
+<%--<base href="<%=basePath %>" />--%>
 <!-- 通用的css 引用 -->
-<link rel="stylesheet" type="text/css" href="Css/common/common.css" />
-<link rel="stylesheet" type="text/css" href="Css/common/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/common/common.css" />
+<link rel="stylesheet" type="text/css" href="css/common/icon.css" />
 <!-- 通用js引用 -->
 <!-- jquery 引用 -->
-<script type="text/javascript" src="Plugins/jquery/jquery-1.10.1.js"></script>
-<link rel="stylesheet" type="text/css" href="Plugins/easyui/themes/bootstrap/easyui.css">
-<link rel="stylesheet" type="text/css" href="Css/common/all.css">
-<link rel="stylesheet" type="text/css" href="Css/common/default.css">
-<link rel="stylesheet" type="text/css" href="Css/common/layout.css">
-<link rel="stylesheet" type="text/css" href="Css/menu/menu.css" />
-<script type="text/javascript" src="Plugins/easyui/jquery.min.js"></script>
-<script type="text/javascript" src="Plugins/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="Js/common/commonWin.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<link rel="stylesheet" type="text/css" href="css/themes/bootstrap/easyui.css">
+<link rel="stylesheet" type="text/css" href="css/common/all.css">
+<link rel="stylesheet" type="text/css" href="css/common/default.css">
+<link rel="stylesheet" type="text/css" href="css/common/layout.css">
+<link rel="stylesheet" type="text/css" href="css/menu/menu.css" />
+<script type="text/javascript" src="js/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="js/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/common/commonWin.js"></script>
 
-<script type="text/javascript" src="Js/common/waterutilsWarn.js"></script>
-<script type="text/javascript" src="Plugins/easyui/commonWarn.js"></script>
-<script type="text/javascript" src="Plugins/easyui/common.js"></script>
-<script type="text/javascript" src="../water-warn/Js/warningInfor/warnInfor.js"></script>
-<link rel="stylesheet" type="text/css" href="../water-warn/Css/dyulcss/dyul.css">
+<script type="text/javascript" src="js/common/waterutilsWarn.js"></script>
+<script type="text/javascript" src="js/easyui/commonWarn.js"></script>
+<script type="text/javascript" src="js/easyui/common.js"></script>
+<script type="text/javascript" src="js/easyui/warnInfor.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common/dyul.css">
 <!--  <script type="text/javascript" src="Js/menu/menu-new.js"></script>-->
-<script type="text/javascript" src="Js/menu/menu-new.js"></script>
+<script type="text/javascript" src="js/menu/menu-new.js"></script>
 
 
 

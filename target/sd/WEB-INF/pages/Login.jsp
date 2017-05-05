@@ -1,8 +1,20 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page pageEncoding="utf-8" %>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<%--<%@ taglib prefix="wn" tagdir="/WEB-INF/tags"%>--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
+    <%--<base href="<%=basePath %>" />--%>
+
     <meta charset="utf-8">
     <title>Api</title>
     <meta name="keywords" content="Api" />
@@ -27,7 +39,7 @@
 <body>
 
 <div class="page-container">
-    <h1>登录</h1>
+    <h1>登录 </h1>
     <form action="/index" method="post" >
         <input type="text" name="username" class="username" placeholder="用户名">
         <input type="password" name="password" class="password" placeholder="密码">

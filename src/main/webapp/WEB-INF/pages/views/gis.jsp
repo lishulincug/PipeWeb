@@ -2,7 +2,7 @@
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@taglib prefix="wn" tagdir="/WEB-INF/tags"%>
+<%--<%@taglib prefix="wn" tagdir="/WEB-INF/tags"%>--%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="Css/common/common.css" type="text/css" rel="stylesheet" />
+<link href="css/common/common.css" type="text/css" rel="stylesheet" />
 
 <link href="Css/gis/search/search.css" type="text/css" rel="stylesheet" />
 <link href="Css/gis/viewcard/viewcard.css" type="text/css" rel="stylesheet" />
@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <link href="Css/gis/promptBox/promptBox.css" type="text/css" rel="stylesheet" />
 <link href="Plugins/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
 <link rel="stylesheet" href="Plugins/nanoscroller/css/nanoscroller.css">
-<link rel="stylesheet" type="text/css" href="Plugins/easyui/themes/bootstrap/easyui.css">
+<link rel="stylesheet" type="text/css" href="css/themes/bootstrap/easyui.css">
 <link rel="stylesheet" href="Plugins/accordion/css/style.css"> <!-- Resource style -->
 <!-- panel面板样式 -->
 <link rel="stylesheet" type="text/css" href="Plugins/panel/css/panel.css">
@@ -31,12 +31,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <link href="Css/gis/sumlate/sumlate.css" type="text/css" rel="stylesheet" />
 
 <script type="text/javascript" data-main="Js/gis/index.js" src="Plugins/requireJs/require-2.1.11.js"></script>
-<script type="text/javascript" src="Plugins/jquery/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
 
-<script type="text/javascript" src="Js/common/waterutilsWarn.js"></script>
+<script type="text/javascript" src="js/common/waterutilsWarn.js"></script>
 <script type="text/javascript" src="Plugins/easyui/commonWarn.js"></script>
-<script type="text/javascript" src="Js/common/waterutilsOld.js"></script>
-<script type="text/javascript" src="Js/gis/gis.js"></script>
+<script type="text/javascript" src="js/common/waterutilsOld.js"></script>
+<script type="text/javascript" src="js/gis/gis.js"></script>
 <!--[if IE]>
 		<script type="text/javascript" src="Js/common/json2.js"></script>
 		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
