@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>video.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <!--
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.video.ui.css">
+	
+  </head>
+  
+  <body>
+  	<!-- 小
+	<div class="video" style="width:800px;height:400px;">
+		
+	</div>
+	-->
+	
+	<!--
+	<div class="video" style="width:1000px;height:600px;margin-top:20px;">
+		
+	</div>
+	 -->
+	<!-- 全屏 -->
+	<div class="video" style="position:fixed;top:10px;left:10px;bottom:10px;right:10px;">
+		
+	</div>
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!-- 接口 -->
+    <script type="text/javascript" src="js/video.interface.RuDongTest.js"></script>
+    <!-- UI -->
+    <script type="text/javascript" src="js/jquery.video.ui.1.0.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+       	var config = [
+                        {
+                            "name": "供水中心",
+                            "data": [
+                                {
+                                    "id": "1",
+                                    "name": "清水池",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "1"
+                                },
+                                {
+                                    "id": "2",
+                                    "name": "厂区后",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "2"
+                                },
+                                {
+                                    "id": "3",
+                                    "name": "仪表间",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "3"
+                                },
+                                {
+                                    "id": "4",
+                                    "name": "高压室",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "4"
+                                },
+                                {
+                                    "id": "5",
+                                    "name": "二级泵房",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "5"
+                                },
+                                {
+                                    "id": "6",
+                                    "name": "加氯间",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "6"
+                                },
+                                {
+                                    "id": "7",
+                                    "name": "氯瓶间",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "7"
+                                },
+                                {
+                                    "id": "8",
+                                    "name": "管道泵房",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "8"
+                                },
+                                {
+                                    "id": "9",
+                                    "name": "厂区前",
+                                    "ipGroup": "1",
+                                    "username": "rd",
+                                    "password": "123456",
+                                    "ipAddr": "192.168.50.140",
+                                    "ipPort": "8000",
+                                    "devType": "0",
+									"channel": "9"
+                                }
+                            ]
+                        }
+                    ];
+       	$(".video").videoUI({
+       				data:config
+       	});
+    });
+    </script>
+  </body>
+</html>

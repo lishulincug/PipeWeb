@@ -1,0 +1,47 @@
+@charset "utf-8"
+a {
+	color: #4A4849;
+	text-decoration: none;
+}
+
+#main {
+	margin-left:auto;
+	margin-right:auto;
+	width: 1000px;
+	font:10pt \5FAE\8F6F\96C5\9ED1;
+}
+
+#side_nav {
+	float: left;
+	width: 191px;
+}
+
+#content {
+	float: right;
+	width: 760px;
+	border: 1px dashed black;
+	text-align: center;
+}
+
+.nav_1 {
+	background-image: url('../image/nav_1.jpg');
+	width: 191px;
+	height: 39px;
+}
+
+.link_1 {
+	padding-left: 0px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.link_1 a {
+	color: #4A4849;
+	text-decoration: none;
+}
+
+#ghsp {
+	margin-left:auto;
+	margin-right:auto;
+	width: 640px;
+}

@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="chart.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script language="javascript" type="text/javascript"></script>
+<style type="text/css">
+.Btn{
+	float:right;
+	width: 65px;
+	height: 25px;
+	background: #72C5F7;
+	color: #fff;
+	outline: none;
+	margin-left: 10px;
+}
+.Btn:hover{
+	background:#4D87C2;
+}
+.chartbody{
+	width:100%;
+	height:100%;
+}
+.top{
+	height:30px;
+}
+.chartpic{
+	position:absolute;
+	top:30px;
+	bottom:0;
+	width:100%;
+}
+.chart{
+	width:100%;
+	height:100%;
+}
+</style>
+<script>
+var historyDatas = {
+	titleText:null,
+	subtitle:"",
+	unit: "",
+	legendshow:true,
+	dataLabelE: true,
+	exportable:false,
+	spacingR:80,
+	SeriesType:"spline",
+	step:5,
+	categories: null,
+	series: null
+};
+function getime(time){
+	time = time.substr(11,8);
+	return time;
+}
+function chart(){
+	var type = $(".type").val();
+	var data = historyDATA;
+	var series = [{name:null,data:[]}];
+	var categories = [];
+	for(var i=0; i<data.length; i++){
+		if(series[0].name == null){
+			series[0].name = data[i].NAME;
+		}
+		series[0].data.push(data[i][type]);
+		categories.push(getime(data[i].REPORTTIME));
+	} 
+	historyDatas.categories = categories;
+	historyDatas.series = series;
+	buildCharts('#history_chart', historyDatas);
+}
+$(function(){
+	chart();
+	//buildCharts('#history_chart', historyDatas); 
+	$(".close").click(function(){
+		$('#chartIframe',parent.document).remove();
+	});
+	$(".type").change(function(){
+		chart();
+		//buildCharts('#history_chart', historyDatas);
+	});
+});
+</script>
+</head>
+<body>
+<div class="chartbody" style="" >
+	<div class="top">
+		<select class="type">
+			<option value="INPUTPRESSURE">进口压力</option>
+			<option value="OUTPUTPRESSURE" >出口压力</option>
+			<option value="INPUTCHLORINE" >进口余氯</option>
+			<option value="OUTPUTCHLORINE" >出口余氯</option>
+			<option value="INPUTTURBIDITY" >进口浊度</option>
+			<option value="OUTPUTTURBIDITY" >出口浊度</option>
+			<option value="INPUTFLOW" >进口瞬时流量</option>
+			<option value="OUTPUTFLOW" >出口瞬时流量</option>
+			<option value="INPUTTOTALFLOW" >进口总流量</option>
+			<option value="OUTPUTTOTALFLOW" >出口总流量</option>
+			<option value="INPUTTODAYFLOW" >今进水总流量</option>
+			<option value="OUTPUTTODAYFLOW" >今出水总流量</option>
+			<option value="INPUTPH" >进水PH</option>
+			<option value="OUTPUTPH" >出水PH</option>
+			<option value="RESERVEOUTPUTFLOW" >复线出口流量</option>
+			<option value="RESERVETOTALOUTPUTFLOW" >复线出口总流量</option>
+			<option value="RESERVETODAYOUTPUTFLOW" >复线今日出口流量</option>
+		</select>
+		<input type="button" value="关闭" class="Btn close" />
+		<input type="button" value="导出" class="Btn" />
+		<input type="button" value="打印" class="Btn" />
+	</div>
+	<div class="chartpic" >
+		<div id="history_chart" class="chart" >
+		</div>
+	</div>	
+</div>
+</body>
+</html>

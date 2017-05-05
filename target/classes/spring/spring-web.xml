@@ -27,7 +27,10 @@
         <property name="prefix" value="/WEB-INF/pages/"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
-
+    <mvc:resources location="/WEB-INF/pages/Icon/" mapping="/Icon/**"/>
+    <!--<mvc:resources location="/WEB-INF/pages/Icon/glyphicon/" mapping="/glyphicon/**"/>-->
+    <mvc:resources location="/WEB-INF/pages/Plugins/easyui/themes/bootstrap/" mapping="/bookstrap/**"/>
+    <mvc:resources location="/WEB-INF/pages/Images/" mapping="/Images/**"/>
     <mvc:resources location="/WEB-INF/pages/img/" mapping="/img/**"/>
     <mvc:resources location="/WEB-INF/pages/js/" mapping="/js/**"/>
     <mvc:resources location="/WEB-INF/pages/css/" mapping="/css/**"/>

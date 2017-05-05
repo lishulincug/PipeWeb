@@ -1,0 +1,387 @@
+.video-ui ul,.video-ui li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/**
+.video-ui div {
+	border: 1px solid black;
+}
+**/
+.video-ui {
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+div.video-ui-index {
+	position: absolute;
+	top: 0px;
+	bottom: 183px;
+	left: 0px;
+	width: 220px;
+	border: 1px solid black;
+}
+div.video-ui-tool{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 220px;
+	height:183px;
+	border: 1px solid black;
+}
+div.video-ui-model {
+	position: absolute;
+	top: 0px;
+	left: 220px;
+	right: 0px;
+	height: 30px;
+	background: #2F4253;
+	border: 1px solid black;
+}
+
+div.video-ui-body {
+	position: absolute;
+	top: 30px;
+	bottom: 30px;
+	left: 220px;
+	right: 0px;
+	padding: 10px;
+	background: rgb(183, 187, 198);
+	border: 1px solid black;
+}
+
+div.video-ui-progress {
+	position: absolute;
+	bottom: 0px;
+	left: 220px;
+	right: 0px;
+	height: 30px;
+	border: 1px solid black;
+}
+
+label.video-ui-index-title,label.video-ui-tool-title {
+	height: 28px;
+	line-height: 30px;
+	font-weight: bold;
+	text-indent: 10px;
+	display: block;
+	color: #585858;
+	font-family: "微软雅黑";
+	border-left: 4px solid #63C3FF;
+	border-top: 1px solid #d9dcde;
+	border-bottom: 1px solid #d9dcde;
+}
+div.video-ui-index-group ul label{
+	height:22px;
+	line-height:22px;
+	text-indent:20px;
+	font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+	font-size:14px;
+	color:#333;
+	display:block;
+	background:url(icon/folder-closed.gif) 0px 5px no-repeat;
+	cursor:pointer;
+}
+div.video-ui-index-group ul.selected label{
+	background:url(icon/folder.gif) 0px 6px no-repeat;
+}
+div.video-ui-index-group{
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+div.video-ui-index-group ul{
+	padding-left:20px;
+	padding-top:5px;
+}
+div.video-ui-index-group ul li{
+	text-indent:45px;
+	width:180px;
+	height:20px;
+	line-height:20px;
+	font-size:12px;
+	color:#333;
+	cursor:pointer;
+	display:none;
+	border:1px solid white;
+	background:url(icon/icon2.png) 15px -36px no-repeat;
+}
+div.video-ui-index-group ul.selected li{
+	display:block;
+}
+div.video-ui-index-group ul li:hover{
+	border:1px solid #FFB951;
+}
+div.video-ui-index-group ul li.selected{
+	border:1px solid #FFB951;
+	background-color:#FFE6B0;
+	/**
+	background:url(icon/icon2.png) #FFE6B0 15px 3px no-repeat;
+	**/
+}
+div.video-ui-tool div{
+	height:151px;
+	position:relative;
+	background:url(icon/r_bg.png) 35px no-repeat;
+}
+div.video-ui-tool div ul li{
+	position:absolute;
+	width:100px;
+	height:30px;
+	background-image:url(icon/p_icon.png);
+	background-repeat:no-repeat;
+	text-indent:-300px;
+	cursor:pointer;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomIn{
+	top:5px;
+	left:42px;
+	width:125px;
+	background-position:50px -2px;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomIn:active{
+	background-position:50px -379px;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomOut{
+	top:120px;
+	left:44px;
+	width:125px;
+	background-position:50px -150px;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomOut:active{
+	background-position:50px -527px;
+}
+div.video-ui-tool div ul li.video-ui-tool-top{
+	top:30px;
+	left:75px;
+	width:65px;
+	height:32px;
+	background-position: -2px -705px;
+}
+div.video-ui-tool div ul li.video-ui-tool-top:active{
+	background-position: -1px -1089px;
+}
+div.video-ui-tool div ul li.video-ui-tool-left{
+	top:43px;
+	left:61px;
+	width:33px;
+	height:65px;
+	background-position-y:-793px;
+}
+div.video-ui-tool div ul li.video-ui-tool-left:active{
+	background-position-y:-1176px;
+}
+div.video-ui-tool div ul li.video-ui-tool-right{
+	top:44px;
+	left:120px;
+	width:30px;
+	height:65px;
+	background-position:-17px -890px;
+}
+div.video-ui-tool div ul li.video-ui-tool-right:active{
+	background-position:-17px -1273px;
+}
+div.video-ui-tool div ul li.video-ui-tool-bottom{
+	top:90px;
+	left:73px;
+	width:70px;
+	height:30px;
+	background-position-y:-1010px;
+}
+div.video-ui-tool div ul li.video-ui-tool-bottom:active{
+	background-position:0px -1395px;
+}
+div.video-ui-tool div ul li.video-ui-tool-reset{
+	top:56px;
+	left:87px;
+	width:42px;
+	height:42px;
+	background-position:-3px -614px;
+}
+div.video-ui-tool div ul li.video-ui-tool-reset:active{
+	background-position:-3px -1457px;
+}
+div.video-ui-tool div ul li.video-ui-tool-pause{
+	top:40px;
+	left:31px;
+	width:33px;
+	height:80px;
+	background-position:8px -55px;
+}
+div.video-ui-tool div ul li.video-ui-tool-pause:active{
+	background-position:8px -432px;
+}
+div.video-ui-tool div ul li.video-ui-tool-start{
+	top:40px;
+	left:150px;
+	width:33px;
+	height:80px;
+	background-position:5px -205px;
+}
+div.video-ui-tool div ul li.video-ui-tool-start:active{
+	background-position:5px -280px;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomOutFocal{
+	top:5px;
+	left:5px;
+	width:30px;
+	height:30px;
+	background-position:5px 5px;
+	background-image:url(icon/video.png);
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomOutFocal:active{
+	border:1px solid #333;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomInFocal{
+	top:5px;
+	left:183px;
+	width:30px;
+	height:30px;
+	background-position:-21px 5px;
+	background-image:url(icon/video.png);
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomInFocal:active{
+	border:1px solid #333;
+}
+div.video-ui-tool div ul li.video-ui-tool-openWiper{
+	top:65px;
+	left:5px;
+	width:30px;
+	height:30px;
+	background-position:5px -32px;
+	background-image:url(icon/video.png);
+}
+div.video-ui-tool div ul li.video-ui-tool-openWiper:active{
+	border:1px solid #333;
+}
+div.video-ui-tool div ul li.video-ui-tool-closeWiper{
+	top:65px;
+	left:183px;
+	width:30px;
+	height:30px;
+	background-position:-21px -35px;
+	background-image:url(icon/video.png);
+}
+div.video-ui-tool div ul li.video-ui-tool-closeWiper:active{
+	border:1px solid #333;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomOutAperture{
+	top:115px;
+	left:5px;
+	width:30px;
+	height:30px;
+	background-position:5px -68px;
+	background-image:url(icon/video.png);
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomOutAperture:active{
+	border:1px solid #333;
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomInAperture{
+	top:115px;
+	left:180px;
+	width:30px;
+	height:30px;
+	background-position:-21px -68px;
+	background-image:url(icon/video.png);
+}
+div.video-ui-tool div ul li.video-ui-tool-zoomInAperture:active{
+	border:1px solid #333;
+}
+div.video-ui-model ul li {
+	float: right;
+	width: 40px;
+	height:30px;
+	background-image: url(icon/icon4.png) ;
+	background-repeat:no-repeat;
+	background-position-y: -28px;
+	cursor: pointer;
+}
+
+div.video-ui-model ul li.selected {
+	background-position-y: -57px;
+}
+li.video-ui-tool-printScreen{
+	float:right;
+	text-indent:20px;
+	height:30px;
+	width:60px;
+	font-size:12px;
+	line-height:30px;
+	background-position-x: -190px;
+	background-position-y: 8px;
+	background-image: url(icon/icon4.png) ;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+li.video-ui-tool-printScreen:active{
+	border-left:1px solid rgb(122,122,122);
+	border-right:1px solid rgb(122,122,122);
+}
+li.video-ui-tool-allScreen{
+	float:right;
+	text-indent:20px;
+	height:30px;
+	width:60px;
+	font-size:12px;
+	line-height:30px;
+	background-position-x: -260px;
+	background-position-y: 8px;
+	background-image: url(icon/icon4.png) ;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+li.video-ui-tool-allScreen:active{
+	border-left:1px solid rgb(122,122,122);
+	border-right:1px solid rgb(122,122,122);
+}
+li.video-ui-model-item[model="1"] {
+	background-position-x: -16px;
+}
+
+li.video-ui-model-item[model="4"] {
+	background-position-x: -76px;
+}
+
+li.video-ui-model-item[model="6"] {
+	background-position-x: -135px;
+}
+
+li.video-ui-model-item[model="9"] {
+	background-position-x: -194px;
+}
+
+li.video-ui-model-item[model="16"] {
+	background-position-x: -253px;
+}
+
+div.video-ui-body div.video-ui-body-item {
+	position: relative;
+	display:none;
+}
+
+div.video-ui-body div ul li {
+	position:absolute;
+	float:left;
+	border: 2px solid black;
+	background: rgb(160, 160, 160);
+	margin: 0px 2px 2px 0px;
+}
+div.video-ui-body div ul li div{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	z-index:99;
+	display:block;
+}
+div.video-ui-body div ul li object{
+	width:100%;
+	height:100%;
+}
+div.video-ui-body div ul li.selected{
+	border:2px solid #FFB951;
+}
+div.video-ui-body div.video-ui-body-item.selected{
+	display:block;
+}

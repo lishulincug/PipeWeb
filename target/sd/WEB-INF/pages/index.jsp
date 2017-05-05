@@ -55,7 +55,7 @@
 							</a>
 						</div>
 						<div class="col-lg-6 set-effect" style="background-color: #66aaf3;">
-							<a href="#">
+							<a href="../extend_pages/water-gis/web-inf/views/index">
 								<img src="img/GSM.png" class="img_right  img_play img_play"/>
 								<h4 class="text-center  right_text">G-S-M</h4>
 							</a>

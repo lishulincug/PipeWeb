@@ -1,0 +1,58 @@
+.panel-box{
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.panel-box .panel-box-header{
+	width:100%;
+	height:37px;
+	background: white;
+    border-bottom: 3PX SOLID #2466B9;
+	position:relative;
+    display: inline-table;
+}
+.panel-box .panel-box-header-title{
+	font-size: 15px;
+    font-weight: bold;
+    color: #58585A;
+    height: 37px;
+    line-height: 37px;
+    text-indent: 0px;
+    letter-spacing: 1px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-indent: 10px;
+}
+.panel-box .panel-box-header-tool{
+	top: 50%;
+    margin-top: -11px;
+    position: absolute;
+    margin-top: -8px;
+    height: 20px;
+    overflow: hidden;
+    right: 5px !important;
+}
+.panel-box .panel-box-header-tool a{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    margin: 0 0 0 2px;
+    vertical-align: top;
+}
+.panel-tool-close {
+    background: url('../images/panel_tools.png') no-repeat -16px 0px;
+}
+
+.panel-box .panel-tool-close:hover{
+	
+}
+.panel-box .panel-box-container{
+	top:40px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	position:absolute;
+	background: white;
+}

@@ -3,6 +3,7 @@ package com.imudges.controller;
 
 import com.imudges.Service.UserService;
 import com.imudges.entity.User;
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,6 +30,16 @@ public class IndexController {
         if(user!=null&&user.getuPassword().equals(request.getParameter("password")))
             return "index";
         return "loginfailed";
+    }
+
+    @RequestMapping(value = "/index1",method = RequestMethod.GET)
+    public String index1() {
+        return "views/index";
+    }
+    @RequestMapping(value = "/gis",method = RequestMethod.GET)
+    public String gis()
+    {
+        return "views/gis";
     }
 
 }
